@@ -1,0 +1,4 @@
+gradio==4.36.1
+scikit-learn
+scipy
+joblib
