@@ -63,4 +63,7 @@ demo = gr.Interface(
 
 # 5. Launch the application
 if __name__ == "__main__":
-    demo.launch(theme=theme)
+    # Get Render's dynamic port or default to 10000
+    port = int(os.environ.get("PORT", 10000))
+    # Bind to 0.0.0.0 so Render can detect the live app
+    demo.launch(theme=theme, server_name="0.0.0.0", server_port=port)
