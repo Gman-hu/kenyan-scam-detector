@@ -1,4 +1,7 @@
-gradio==4.36.1
+gradio
 scikit-learn
-scipy
+pandas
+numpy
 joblib
+scipy
+pyaudioop
