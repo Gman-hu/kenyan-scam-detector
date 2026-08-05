@@ -58,11 +58,9 @@ demo = gr.Interface(
         ["Buda nina shida ya urgent, tuma 500 kwa hii namba mpya nikutext baadaye."],
         ["ATTENTION: Your M-Pesa account has been suspended due to unverified ID details. Click http://bit.ly/fake-mpesa to unlock immediately."],
         ["Aha, Leo tumepanga kuenda supa kununua vitu za home na beshte yangu."]
-    ],
-    theme=theme
+    ]
 )
 
-# 5. Launch config explicitly for Render.com
+# 5. Launch the application
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 10000))
-    demo.launch(server_name="0.0.0.0", server_port=port)
+    demo.launch(theme=theme)
